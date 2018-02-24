@@ -21,7 +21,7 @@ The materials provided are:
 # Planned Changes
 Currently, the source code is only in C, but it is my plan to add other languages. If you have a desire, you can provide the materials in your favorite language in a pull request so they can be included. (And thank you!)
 
---
+------
 This repo was created by Bob Koon on Feb. 24, 2018.
 
 [GitHub](https://github.com/BobatBH)

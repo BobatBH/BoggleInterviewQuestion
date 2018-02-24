@@ -12,7 +12,7 @@ A dictionary is also provided. However, how it is used is up to the candidate.
 
 
 # Grid Traversal
-The first problem to solve is how to traverse the entire grid in such a way that guarantees that all valid combinations of grid locations have been attempted. Interviewers should be looking for use of a [tree data structure](https://en.wikipedia.org/wiki/Tree_(data_structure) using a [pre-order](https://en.wikipedia.org/wiki/Tree_traversal#Pre-order) [depth-first search](https://en.wikipedia.org/wiki/Tree_traversal#Depth-first_search) algorithm.
+The first problem to solve is how to traverse the entire grid in such a way that guarantees that all valid combinations of grid locations have been attempted. Interviewers should be looking for use of a [tree data structure](https://en.wikipedia.org/wiki/Tree_(data_structure)) using a [pre-order](https://en.wikipedia.org/wiki/Tree_traversal#Pre-order) [depth-first search](https://en.wikipedia.org/wiki/Tree_traversal#Depth-first_search) algorithm.
 
 This can be solved in two ways:
 - Recursive
@@ -26,7 +26,7 @@ The other problem the candidate needs to solve is how to determine if a potentia
 
 This can also be solved a number of ways, for example:
 - [Hashing](https://en.wikipedia.org/wiki/Hash_table)
-- [Trees](https://en.wikipedia.org/wiki/Tree_(data_structure)
+- [Trees](https://en.wikipedia.org/wiki/Tree_(data_structure))
 
 Other than brute-force, there is, perhaps, no wrong algorithm. The [Discussion Topics](#topics) section asks about other ways that it could be implemented and the trade-offs associated with them.
 
@@ -134,7 +134,7 @@ vamp
 van
 ```
 
---
+------
 This repo was created by Bob Koon on Feb. 24, 2018.
 
 [GitHub](https://github.com/BobatBH)
