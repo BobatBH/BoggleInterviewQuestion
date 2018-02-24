@@ -16,10 +16,11 @@ The first problem to solve is how to traverse the entire grid in such a way that
 
 This can be solved in two ways:
 - Recursive
-- Iterative
+- Iterative: this is implemented using a [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
 
 **It is up to the reviewer to decide which solution is acceptable and to make that known to the candidate without hinting at a possible solution.** For example, if a recursive solution is desired, the interviewer can mention a time constraint: *"We have a limited amount of time today so use the solution that is quicker to write."*
 
+In either case, the candidate has to create the data structure themselves.
 
 # Word Lookup
 The other problem the candidate needs to solve is how to determine if a potential word is in the dictionary. They are likely to think of a brute-force approach first, but that is a trap because the dictionary is deliberately very large. They should be thinking about runtime efficiency and the data structures and algorithms needed for that.
@@ -76,8 +77,14 @@ The grid data in the materials is:
     n e p o
 ```
 
+## The `dictionary.txt` File
+The dictionary is supplied as a (UNIX) newline-delimited list of words with the first line being the number of entries (230780). It originated from `/usr/share/dict/words` filtered to 3-16 characters long with the duplicates removed.
+
+In the scaffold, the file is ingested, null-terminated, and a table of string pointers is created for the candidate's use.
+
+
 ## The Word List
-There are 53 words in the sample grid shown above:
+The sample grid above has 53 words that are in the dictionary:
 ```
 alit
 ami
