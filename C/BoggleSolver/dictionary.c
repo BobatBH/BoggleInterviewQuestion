@@ -102,8 +102,12 @@ static bool createEntryTable(char* const  buffer,
         char c = *bufferPtr;
         if (c == 0x0A) {
             *bufferPtr = 0;
-            bufferPtr++;
-            *tablePtr++ = bufferPtr;
+
+            // if this is the last char, don't write the next ptr
+            if (i < (adjustedSize-1)) {
+                bufferPtr++;
+                *tablePtr++ = bufferPtr;
+            }
         } else {
             bufferPtr++;
         }

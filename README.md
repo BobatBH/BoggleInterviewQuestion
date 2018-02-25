@@ -13,14 +13,14 @@ Provided here is a skeleton (Xcode, but can be migrated to another environment p
 
 The materials provided are:
 - Source code to the scaffolding
-- A `dictionary.txt` file that the scaffold uses to create the dictionary data
+- A `dictionary` file (could be .txt or .json depending on the language) that the scaffold uses to create the dictionary data
 - Xcode project so you can see the structure etc. and for you to try to solve it if you want
 - This Readme that describes the challenge
 - A [separate document for interviewers](INTERVIEWERS.md) that provides a detailed discussion of the problem along with follow-up discussion points and exercises (separate from the Readme so as to not spoil the solution)
 
 
 # Planned Changes
-Currently, the source code is only in C, but it is my plan to add other languages. If you have a desire, you can provide the materials in your favorite language in a pull request so they can be included. (And thank you!)
+Currently, the source code is in C and Objective-C, but it is my plan to add other languages. If you have a desire, you can provide the materials in your favorite language in a pull request so they can be included. (And thank you!)
 
 ------
 This repo was created by Bob Koon on Feb. 24, 2018.
