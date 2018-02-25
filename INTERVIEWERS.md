@@ -80,9 +80,14 @@ The grid data in the materials is:
 ## The `dictionary` File
 The dictionary file is supplied. It originated from `/usr/share/dict/words` with the word list filtered to 3-16 characters long, lower-cased, and with the duplicates removed. There are 230780 entries.
 
+### C
 For the C version, it is a (UNIX) newline-delimited .txt file, one word per line, with the first line being the number of entries. In the scaffold, the file is ingested, null-terminated, and a table of string pointers is created for the candidate's use.
 
+### Objective-C
 For the Objective-C version, it is a .json file with an array of words in the `"words"` entry of the JSON dictionary. In the scaffold, the file is ingested and turned into an NSArray of NSStrings for the candidate's use.
+
+### Swift
+Similar to the Objective-C version, the Swift version uses a .json file with an array of words in the `"words"` entry of the JSON dictionary. In the scaffold, the file is ingested and turned into an array of Strings for the candidate's use.
 
 ## The Word List
 The sample grid above has 53 words that are in the supplied dictionary:

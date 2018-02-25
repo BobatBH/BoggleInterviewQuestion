@@ -20,7 +20,7 @@ The materials provided are:
 
 
 # Planned Changes
-Currently, the source code is in C and Objective-C, but it is my plan to add other languages. If you have a desire, you can provide the materials in your favorite language in a pull request so they can be included. (And thank you!)
+Currently, the source code is in C, Objective-C, and Swift, but it is my plan to add other languages. If you have a desire, you can provide the materials in your favorite language in a pull request so they can be included. (And thank you!)
 
 ------
 This repo was created by Bob Koon on Feb. 24, 2018.
