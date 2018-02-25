@@ -46,12 +46,15 @@ func solution() {
 
 //==== ...and here =========================
 
+let wordDictionary: WordDictionary
+
 do {
-    let wordDictionary = try WordDictionary()
-    if wordDictionary.wordList.count > 0 {
-        solution()
-        print(foundWords)
-    }
-} catch {
-    print("Could not create the word dictionary")
+    wordDictionary = try WordDictionary()
+} catch (let error) {
+    fatalError(error.localizedDescription)
+}
+
+if wordDictionary.wordList.isEmpty == false {
+    solution()
+    print(foundWords)
 }
