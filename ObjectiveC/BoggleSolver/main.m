@@ -54,7 +54,7 @@ WordDictionary* wordDictionary = nil;
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         wordDictionary = [[WordDictionary alloc] init];
-        if (wordDictionary == nil) {
+        if (wordDictionary.wordList.count == 0) {
             return 0;
         }
         Solution* solution = [[Solution alloc] init];
