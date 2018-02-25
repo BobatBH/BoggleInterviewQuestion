@@ -15,12 +15,15 @@ NSString* const dictionaryFileName = @"dictionary.json";
     if (self == nil) return nil;
     self.words = [self createWordList];
     NSAssert(self.words != nil, @"the word array wasn't created");
-    NSLog(@"word dictionary created with %lu entries", (unsigned long)self.words.count);
+    if (self.words.count > 0) {
+        NSLog(@"word dictionary created with %lu entries", (unsigned long)self.words.count);
+    }
     return self;
 }
 - (nonnull NSArray*)createWordList {
     NSDictionary* jsonDictionary = [self loadJSON];
     if (jsonDictionary == nil) {
+        NSLog(@"Could not create the word dictionary");
         return @[];
     }
     return jsonDictionary[@"words"];
@@ -28,6 +31,9 @@ NSString* const dictionaryFileName = @"dictionary.json";
 - (nullable NSDictionary*)loadJSON {
     NSError* jsonError = nil;
     NSData* objectData = [NSData dataWithContentsOfFile:dictionaryFileName];
+    if (objectData == nil) {
+        return nil;
+    }
     return [NSJSONSerialization JSONObjectWithData:objectData
                                            options:NSJSONReadingMutableContainers
                                              error:&jsonError];
